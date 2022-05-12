@@ -854,22 +854,20 @@ letter-spacing: 0.03em;
 }
 
 .filter-top-text {
-position: absolute;
-top: 0%;
-overflow: auto;
+    position: absolute;
+    top: 0%;
+    overflow: auto;
 
-width: 370px;
 font-weight: 400;
 font-size: 18px;
 line-height: 1.56;
-letter-spacing: 0,03em;
 
-padding: 63px 24PX;
-height: 100%;
-transform: translateY(100%);
+    padding: 63px 24px;
+    height: 100%;
+    transform: translateY(100%);
 
 color: var(--white-bc-color);
-background-color: rgba(33, 150, 243, 0.9);
+background-color: #2196F3E5;
 
 transition: transform 250ms var(--timing-function);
 }
@@ -1026,3 +1024,57 @@ margin-bottom: 20px;
     fill: var(--white-bc-color);
 }
 
+/* ----- Modal ----- */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    
+width: 100%;
+height: 100%;
+
+background-color: #00000033;
+
+transition: opacity 250ms var(--timing-function),
+visibility 250ms var(--timing-function);
+/*display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(0.5);
+}
+
+.modal {
+width: 528px;
+height: 581px;
+border-radius: 4px;
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(1);
+transition: transform 250ms;
+
+background-color: var(--white-bc-color);
+}
+
+.modal-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 50%;
+
+    margin-top: 8px;
+    margin-right: 8px;
+
+    background-color: #ffffff00;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
