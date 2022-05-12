@@ -831,7 +831,7 @@ letter-spacing: 0.03em;
 }
 
 .filter-list-item {
-    width: calc(100% / 3 -30px);
+    width: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
 
@@ -842,6 +842,36 @@ letter-spacing: 0.03em;
 .filter-list-item:focus {
     box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
     0px 1px 1px 0px #0000001f;
+}
+
+.filter-list-item:hover .filter-top-text {
+    transform: translateY(0%);
+}
+
+.filter-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-top-text {
+position: absolute;
+top: 0%;
+overflow: auto;
+
+width: 370px;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0,03em;
+
+padding: 63px 24PX;
+height: 100%;
+transform: translateY(100%);
+
+color: var(--white-bc-color);
+background-color: rgba(33, 150, 243, 0.9);
+
+transition: transform 250ms var(--timing-function);
 }
 
 .filter-box {
