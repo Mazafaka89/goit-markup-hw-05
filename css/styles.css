@@ -976,6 +976,7 @@ letter-spacing: 0.03em;
 
     color: var(--accent-color);
 }
+
 .portfolio-footer-logo-white {
     color: var(--white-bc-color);
 }
@@ -990,6 +991,7 @@ letter-spacing: 0.03em;
 
     color: var(--white-bc-color);
 }
+
 .contacts-mail-link {
     display: block;
     margin-top: 9px;
@@ -1002,6 +1004,7 @@ letter-spacing: 0.03em;
 .contacts-mail-link:focus {
     color: var(--accent-color);
 }
+
 .contacts-tel-link {
     display: block;
     margin-top: 9px;
@@ -1010,6 +1013,7 @@ letter-spacing: 0.03em;
 
     transition: color 250ms var(--timing-function);
 }
+
 .contacts-tel-link:hover,
 .contacts-tel-link:focus {
     color: var(--accent-color);
@@ -1072,6 +1076,7 @@ margin-bottom: 20px;
 .portfolio-footer-social-link:hover .portfolio-footer-social-icon {
     fill: var(--white-bc-color);
 }
+
 
 /* ----- Modal ----- */
 
